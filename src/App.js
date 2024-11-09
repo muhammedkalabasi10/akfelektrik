@@ -5,7 +5,7 @@ import './index.css';
 import logojpg from './images/logojpg.jpg'
 import PhoneIcon from '@mui/icons-material/Phone';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
 } from 'react-router-dom';
