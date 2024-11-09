@@ -51,6 +51,7 @@ function App() {
         notificationSound
       />
       </div>
+      <BrowserRouter basename="https://akfelectric.com.tr">
 
         <ScrollToTop>
           <Routes>
@@ -61,6 +62,7 @@ function App() {
 
           </Routes>
         </ScrollToTop>
+        </BrowserRouter>
     </>
   );
 }
