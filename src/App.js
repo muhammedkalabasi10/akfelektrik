@@ -37,7 +37,6 @@ function App() {
 
   return (
     <>
-      <HashRouter basename="https://akfelectric.com.tr">
       <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
       <div className="App">
       <FloatingWhatsApp
@@ -62,7 +61,6 @@ function App() {
 
           </Routes>
         </ScrollToTop>
-      </HashRouter>
     </>
   );
 }
