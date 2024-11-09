@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/akfelektrik/static/css/main.933fdb89.css",
-    "main.js": "/akfelektrik/static/js/main.e2b7f6db.js",
-    "static/media/web-dev.svg": "/akfelektrik/static/media/web-dev.2aeb367dd64870a4134697aa34d65a74.svg",
-    "static/media/alarmveyanginsistemleri.webp": "/akfelektrik/static/media/alarmveyanginsistemleri.6aaac4672eb17db6ba3d.webp",
-    "static/media/kamerasistemleriarizalari.webp": "/akfelektrik/static/media/kamerasistemleriarizalari.68990212f015cf41b034.webp",
-    "static/media/elektrikliarac.webp": "/akfelektrik/static/media/elektrikliarac.780554085abc4e9db12b.webp",
-    "static/media/goruntuvediyafonsistemleri.webp": "/akfelektrik/static/media/goruntuvediyafonsistemleri.13b19e5e7cbc0916dbd8.webp",
-    "static/media/elektrikprojelerivetadilat.webp": "/akfelektrik/static/media/elektrikprojelerivetadilat.523ac423ecec52cac7a5.webp",
-    "static/media/evelektrikarizalari.webp": "/akfelektrik/static/media/evelektrikarizalari.f9de53d6950fb66fe6f4.webp",
-    "static/media/elektrik2.jpg": "/akfelektrik/static/media/elektrik2.b80ac85e035d45634fe7.jpg",
-    "static/media/seydioglu.png": "/akfelektrik/static/media/seydioglu.8bb7a32d1ca4cf944795.png",
-    "static/media/farukgulluoglu.png": "/akfelektrik/static/media/farukgulluoglu.a7f605699434bf60b5fa.png",
-    "static/media/logojpg.jpg": "/akfelektrik/static/media/logojpg.8d6653588774c7b19318.jpg",
-    "static/media/logo.png": "/akfelektrik/static/media/logo.553c0599d9f6d2985457.png",
-    "static/media/erpilic.jfif": "/akfelektrik/static/media/erpilic.44ed8d49b85a8d616316.jfif",
-    "static/media/footer.svg": "/akfelektrik/static/media/footer.f7b67a1234a7ce02c909.svg",
-    "static/media/eczacibasi.jfif": "/akfelektrik/static/media/eczacibasi.cc6d04729fd283218d4f.jfif",
-    "index.html": "/akfelektrik/index.html",
-    "static/media/hero-bg.svg": "/akfelektrik/static/media/hero-bg.2237f2b6be81c21a80a6.svg",
-    "main.933fdb89.css.map": "/akfelektrik/static/css/main.933fdb89.css.map",
-    "main.e2b7f6db.js.map": "/akfelektrik/static/js/main.e2b7f6db.js.map"
+    "main.css": "/static/css/main.91160b1f.css",
+    "main.js": "/static/js/main.cd38eb47.js",
+    "static/media/web-dev.svg": "/static/media/web-dev.2aeb367dd64870a4134697aa34d65a74.svg",
+    "static/media/alarmveyanginsistemleri.webp": "/static/media/alarmveyanginsistemleri.6aaac4672eb17db6ba3d.webp",
+    "static/media/kamerasistemleriarizalari.webp": "/static/media/kamerasistemleriarizalari.68990212f015cf41b034.webp",
+    "static/media/elektrikliarac.webp": "/static/media/elektrikliarac.780554085abc4e9db12b.webp",
+    "static/media/goruntuvediyafonsistemleri.webp": "/static/media/goruntuvediyafonsistemleri.13b19e5e7cbc0916dbd8.webp",
+    "static/media/elektrikprojelerivetadilat.webp": "/static/media/elektrikprojelerivetadilat.523ac423ecec52cac7a5.webp",
+    "static/media/evelektrikarizalari.webp": "/static/media/evelektrikarizalari.f9de53d6950fb66fe6f4.webp",
+    "static/media/elektrik2.jpg": "/static/media/elektrik2.b80ac85e035d45634fe7.jpg",
+    "static/media/seydioglu.png": "/static/media/seydioglu.8bb7a32d1ca4cf944795.png",
+    "static/media/farukgulluoglu.png": "/static/media/farukgulluoglu.a7f605699434bf60b5fa.png",
+    "static/media/logojpg.jpg": "/static/media/logojpg.8d6653588774c7b19318.jpg",
+    "static/media/logo.png": "/static/media/logo.553c0599d9f6d2985457.png",
+    "static/media/erpilic.jfif": "/static/media/erpilic.44ed8d49b85a8d616316.jfif",
+    "static/media/footer.svg": "/static/media/footer.f7b67a1234a7ce02c909.svg",
+    "static/media/eczacibasi.jfif": "/static/media/eczacibasi.cc6d04729fd283218d4f.jfif",
+    "index.html": "/index.html",
+    "static/media/hero-bg.svg": "/static/media/hero-bg.2237f2b6be81c21a80a6.svg",
+    "main.91160b1f.css.map": "/static/css/main.91160b1f.css.map",
+    "main.cd38eb47.js.map": "/static/js/main.cd38eb47.js.map"
   },
   "entrypoints": [
-    "static/css/main.933fdb89.css",
-    "static/js/main.e2b7f6db.js"
+    "static/css/main.91160b1f.css",
+    "static/js/main.cd38eb47.js"
   ]
 }
