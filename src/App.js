@@ -14,7 +14,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
-
+import NotFoundPage from './pages/NotFoundPage';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -58,6 +58,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
+            <Route path="*" component={NotFoundPage} />
+
           </Routes>
         </ScrollToTop>
       </HashRouter>
