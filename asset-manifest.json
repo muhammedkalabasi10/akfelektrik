@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.91160b1f.css",
-    "main.js": "/static/js/main.f120e5fe.js",
+    "main.js": "/static/js/main.dcb5c8c2.js",
     "static/media/web-dev.svg": "/static/media/web-dev.2aeb367dd64870a4134697aa34d65a74.svg",
     "static/media/alarmveyanginsistemleri.webp": "/static/media/alarmveyanginsistemleri.6aaac4672eb17db6ba3d.webp",
     "static/media/kamerasistemleriarizalari.webp": "/static/media/kamerasistemleriarizalari.68990212f015cf41b034.webp",
@@ -20,10 +20,10 @@
     "index.html": "/index.html",
     "static/media/hero-bg.svg": "/static/media/hero-bg.2237f2b6be81c21a80a6.svg",
     "main.91160b1f.css.map": "/static/css/main.91160b1f.css.map",
-    "main.f120e5fe.js.map": "/static/js/main.f120e5fe.js.map"
+    "main.dcb5c8c2.js.map": "/static/js/main.dcb5c8c2.js.map"
   },
   "entrypoints": [
     "static/css/main.91160b1f.css",
-    "static/js/main.f120e5fe.js"
+    "static/js/main.dcb5c8c2.js"
   ]
 }
