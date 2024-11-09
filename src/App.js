@@ -5,7 +5,7 @@ import './index.css';
 import logojpg from './images/logojpg.jpg'
 import PhoneIcon from '@mui/icons-material/Phone';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Routes,
   Route
 } from 'react-router-dom';
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Router basename="https://akfelectric.com.tr">
+      <HashRouter basename="https://akfelectric.com.tr">
       <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
       <div className="App">
       <FloatingWhatsApp
@@ -60,7 +60,7 @@ function App() {
             <Route path="/get-demo" element={<DemoProduct />} /> 
           </Routes>
         </ScrollToTop>
-      </Router>
+      </HashRouter>
     </>
   );
 }
