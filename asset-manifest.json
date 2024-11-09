@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/akfelektrik/static/css/main.933fdb89.css",
-    "main.js": "/akfelektrik/static/js/main.e21a854f.js",
+    "main.js": "/akfelektrik/static/js/main.0f67dee8.js",
     "static/media/web-dev.svg": "/akfelektrik/static/media/web-dev.2aeb367dd64870a4134697aa34d65a74.svg",
     "static/media/alarmveyanginsistemleri.webp": "/akfelektrik/static/media/alarmveyanginsistemleri.6aaac4672eb17db6ba3d.webp",
     "static/media/kamerasistemleriarizalari.webp": "/akfelektrik/static/media/kamerasistemleriarizalari.68990212f015cf41b034.webp",
@@ -20,10 +20,10 @@
     "index.html": "/akfelektrik/index.html",
     "static/media/hero-bg.svg": "/akfelektrik/static/media/hero-bg.2237f2b6be81c21a80a6.svg",
     "main.933fdb89.css.map": "/akfelektrik/static/css/main.933fdb89.css.map",
-    "main.e21a854f.js.map": "/akfelektrik/static/js/main.e21a854f.js.map"
+    "main.0f67dee8.js.map": "/akfelektrik/static/js/main.0f67dee8.js.map"
   },
   "entrypoints": [
     "static/css/main.933fdb89.css",
-    "static/js/main.e21a854f.js"
+    "static/js/main.0f67dee8.js"
   ]
 }
