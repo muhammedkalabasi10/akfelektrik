@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Router basename="https://akfelectric.com.tr/">
+      <Router basename="https://akfelectric.com.tr">
       <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
       <div className="App">
       <FloatingWhatsApp
