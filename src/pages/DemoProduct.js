@@ -75,7 +75,7 @@ const DemoProduct = (props) => {
 
         axios({
             method: "post",
-            url: process.env.REACT_APP_DEMO_REQUEST_API,
+            url: "process.env.REACT_APP_DEMO_REQUEST_API",
             data: fData,
             headers: {
                 'Content-Type':  'multipart/form-data'

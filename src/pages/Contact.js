@@ -40,7 +40,7 @@ const Contact = () => {
 
         axios({
             method: "post",
-            url: process.env.REACT_APP_CONTACT_API,
+            url: "process.env.REACT_APP_CONTACT_API",
             data: fData,
             headers: {
                 'Content-Type':  'multipart/form-data'
