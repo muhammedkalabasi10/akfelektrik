@@ -39,7 +39,7 @@ function App() {
     <>
     <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
 
-      <Router basename='https://muhammedkalabasi10.github.io/akfelektrik/'>
+      <Router basename='http://akfelectric.com.tr/'>
       <div className="App">
       <FloatingWhatsApp
         phoneNumber="05511348518"
