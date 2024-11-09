@@ -55,7 +55,7 @@ function App() {
       </div>
 
         <ScrollToTop>
-          <Routes>
+          <Routes basename="https://akfelectric.com.tr/">
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
