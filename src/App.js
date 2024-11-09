@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Router basename='https://akfelectric.com.tr/'>
+      <Router basename="https://akfelectric.com.tr/">
       <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
       <div className="App">
       <FloatingWhatsApp
@@ -54,7 +54,7 @@ function App() {
       </div>
 
         <ScrollToTop>
-          <Routes basename="https://akfelectric.com.tr/">
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
