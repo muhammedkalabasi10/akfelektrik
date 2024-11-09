@@ -5,16 +5,16 @@ import './index.css';
 import logojpg from './images/logojpg.jpg'
 import PhoneIcon from '@mui/icons-material/Phone';
 import {
-  BrowserRouter,
   Routes,
-  Route
+  Route,
+  BrowserRouter
 } from 'react-router-dom';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 // All pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
-import NotFoundPage from './pages/NotFoundPage';
+
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -51,18 +51,16 @@ function App() {
         notificationSound
       />
       </div>
-      <BrowserRouter basename="https://akfelectric.com.tr">
+      <BrowserRouter basename="https://akfelectric.com.tr/">
 
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
-            <Route path="*" component={NotFoundPage} />
-
           </Routes>
         </ScrollToTop>
-        </BrowserRouter>
+      </BrowserRouter>
     </>
   );
 }
