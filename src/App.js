@@ -19,6 +19,19 @@ import DemoProduct from './pages/DemoProduct';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
+// ✅ usePageTracking fonksiyonunu geri ekliyoruz
+function usePageTracking() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('config', 'G-XF99HZXYQL', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+}
+
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -51,7 +64,6 @@ function App() {
         />
       </div>
 
-      {/* Router'ın içine taşıyoruz */}
       <BrowserRouter>
         <PageTrackingWrapper />
       </BrowserRouter>
@@ -59,7 +71,6 @@ function App() {
   );
 }
 
-// Router’ın içinde useLocation kullanıyoruz
 function PageTrackingWrapper() {
   usePageTracking();
 
@@ -73,6 +84,5 @@ function PageTrackingWrapper() {
     </ScrollToTop>
   );
 }
-
 
 export default App;
