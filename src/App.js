@@ -7,8 +7,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import {
   Routes,
   Route,
-  BrowserRouter,
-  useLocation
+  BrowserRouter
 } from 'react-router-dom';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 // All pages
@@ -19,19 +18,6 @@ import DemoProduct from './pages/DemoProduct';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
-// ✅ usePageTracking fonksiyonunu geri ekliyoruz
-function usePageTracking() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (window.gtag) {
-      window.gtag('config', 'G-XF99HZXYQL', {
-        page_path: location.pathname + location.search,
-      });
-    }
-  }, [location]);
-}
-
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -40,9 +26,11 @@ function App() {
         duration: 1000,
         easing: 'ease-out-cubic',
       });
-    };
+    }
 
-    window.addEventListener('load', aos_init);
+    window.addEventListener('load', () => {
+      aos_init();
+    });
   }, []);
 
   useDocTitle("AKF Elektrik - Elektrik Mühendisliği ve Otomasyon Sistemleri");
@@ -51,38 +39,31 @@ function App() {
     <>
       <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
       <div className="App">
-        <FloatingWhatsApp
-          phoneNumber="05511348518"
-          accountName="AKF Elektrik"
-          chatMessage="Merhaba! Size nasıl yardımcı olabiliriz?"
-          placeholder="Mesaj yazın..."
-          avatar={logojpg}
-          allowEsc
-          allowClickAway
-          notification
-          notificationSound
-        />
+      <FloatingWhatsApp
+        phoneNumber="05511348518"
+        accountName="AKF Elektrik"
+        chatMessage='Merhaba! Size nasıl yardımcı olabiliriz?'
+        placeholder='Mesaj yazın...'
+        avatar={logojpg}
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+      />
       </div>
-
       <BrowserRouter>
-        <PageTrackingWrapper />
+
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/get-demo" element={<DemoProduct />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </>
   );
 }
 
-function PageTrackingWrapper() {
-  usePageTracking();
-
-  return (
-    <ScrollToTop>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/get-demo" element={<DemoProduct />} />
-      </Routes>
-    </ScrollToTop>
-  );
-}
 
 export default App;
