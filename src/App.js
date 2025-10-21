@@ -7,7 +7,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import {
   Routes,
   Route,
-  BrowserRouter
+  BrowserRouter,
+  useLocation
 } from 'react-router-dom';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 // All pages
@@ -18,7 +19,21 @@ import DemoProduct from './pages/DemoProduct';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
+function usePageTracking() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('config', 'G-XF99HZXYQL', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+}
+
 function App() {
+  usePageTracking();
+
   useEffect(() => {
     const aos_init = () => {
       AOS.init({
