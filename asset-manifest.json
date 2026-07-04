@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.91160b1f.css",
-    "main.js": "/static/js/main.609de942.js",
+    "main.css": "/static/css/main.1ae5f123.css",
+    "main.js": "/static/js/main.7ccd84a3.js",
     "static/media/web-dev.svg": "/static/media/web-dev.2aeb367dd64870a4134697aa34d65a74.svg",
     "static/media/alarmveyanginsistemleri.webp": "/static/media/alarmveyanginsistemleri.6aaac4672eb17db6ba3d.webp",
     "static/media/kamerasistemleriarizalari.webp": "/static/media/kamerasistemleriarizalari.68990212f015cf41b034.webp",
@@ -12,18 +12,17 @@
     "static/media/elektrik2.jpg": "/static/media/elektrik2.b80ac85e035d45634fe7.jpg",
     "static/media/seydioglu.png": "/static/media/seydioglu.8bb7a32d1ca4cf944795.png",
     "static/media/farukgulluoglu.png": "/static/media/farukgulluoglu.a7f605699434bf60b5fa.png",
-    "static/media/logojpg.jpg": "/static/media/logojpg.8d6653588774c7b19318.jpg",
     "static/media/logo.png": "/static/media/logo.553c0599d9f6d2985457.png",
     "static/media/erpilic.jfif": "/static/media/erpilic.44ed8d49b85a8d616316.jfif",
     "static/media/footer.svg": "/static/media/footer.f7b67a1234a7ce02c909.svg",
     "static/media/eczacibasi.jfif": "/static/media/eczacibasi.cc6d04729fd283218d4f.jfif",
     "index.html": "/index.html",
     "static/media/hero-bg.svg": "/static/media/hero-bg.2237f2b6be81c21a80a6.svg",
-    "main.91160b1f.css.map": "/static/css/main.91160b1f.css.map",
-    "main.609de942.js.map": "/static/js/main.609de942.js.map"
+    "main.1ae5f123.css.map": "/static/css/main.1ae5f123.css.map",
+    "main.7ccd84a3.js.map": "/static/js/main.7ccd84a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.91160b1f.css",
-    "static/js/main.609de942.js"
+    "static/css/main.1ae5f123.css",
+    "static/js/main.7ccd84a3.js"
   ]
 }
