@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavLinks from '../Navbar/NavLinks';
 import { HashLink } from 'react-router-hash-link';
 import logo from "../../images/logo.png"
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const NavBar = () => {
     const [top, setTop] = useState(!window.scrollY);
@@ -26,6 +27,13 @@ const NavBar = () => {
                     <HashLink smooth to="/#hero"><img src={logo} style={{width:"7rem"}} alt="AKF Elektrik"/></HashLink>
                     
                 </div>
+                <div className="flex flex-row items-center gap-6">
+                    <a href="tel:05511348518" className="hidden md:flex items-center gap-2 text-blue-900 hover:text-blue-700 font-semibold transition duration-200">
+                        <PhoneIcon className="text-lg" />
+                        <span>0551 134 85 18</span>
+                    </a>
+                </div>
+
                 <div className="group flex flex-col items-center">
                     <button className="p-2 rounded-lg lg:hidden text-blue-900" onClick={handleClick}>
                         <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

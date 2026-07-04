@@ -43,3 +43,280 @@ body {
 .phone-button:hover {
   background-color: #5456d0;
 }
+
+.whatsapp-button {
+  position: fixed;
+  z-index: 1000;
+  bottom: 2.2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1.8rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #1FAE55;
+  transform: scale(1.1);
+}
+
+/* Mobile Navigation & Bottom Bar */
+.mobile-nav-menu {
+  display: none;
+}
+
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .phone-button {
+    display: none;
+  }
+
+  .whatsapp-button {
+    display: none;
+  }
+
+  .mobile-nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: color 0.3s, background-color 0.3s;
+    border-right: 1px solid #e5e7eb;
+  }
+
+  .mobile-nav-item:last-child {
+    border-right: none;
+  }
+
+  .mobile-nav-item:active {
+    background-color: #e5e7eb;
+    color: #1f2937;
+  }
+
+  .mobile-nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    border-top: 2px solid #e5e7eb;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-bottom-bar-button {
+    flex: 1;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-bottom-bar-call {
+    color: white;
+    background-color: #3f25d3;
+    border-right: 1px solid #e5e7eb;
+  }
+
+  .mobile-bottom-bar-call:active {
+    background-color: #2f1ba0;
+  }
+
+  .mobile-bottom-bar-whatsapp {
+    color: white;
+    background-color: #25D366;
+  }
+
+  .mobile-bottom-bar-whatsapp:active {
+    background-color: #1FAE55;
+  }
+
+  /* Add padding to body to prevent content from hiding behind fixed bars */
+  body {
+    padding-bottom: 120px;
+  }
+}
+
+/* Popup Modal */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-modal {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 90%;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-close-btn:hover {
+  color: #1f2937;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.popup-description {
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.popup-btn {
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.popup-btn-red {
+  background-color: #dc2626;
+  color: white;
+}
+
+.popup-btn-red:hover,
+.popup-btn-red:active {
+  background-color: #b91c1c;
+  transform: scale(1.02);
+}
+
+.popup-btn-green {
+  background-color: #25D366;
+  color: white;
+}
+
+.popup-btn-green:hover,
+.popup-btn-green:active {
+  background-color: #1FAE55;
+  transform: scale(1.02);
+}
+
+.popup-btn-blue {
+  background-color: #3f25d3;
+  color: white;
+}
+
+.popup-btn-blue:hover,
+.popup-btn-blue:active {
+  background-color: #2f1ba0;
+  transform: scale(1.02);
+}
+
+/* Mobile Popup Adjustments */
+@media (max-width: 768px) {
+  .popup-modal {
+    padding: 2rem;
+    width: 95%;
+  }
+
+  .popup-title {
+    font-size: 1.25rem;
+  }
+
+  .popup-description {
+    font-size: 0.9rem;
+  }
+
+  .popup-btn {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}
