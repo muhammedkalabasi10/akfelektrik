@@ -51,12 +51,8 @@ function App() {
   useDocTitle("AKF Elektrik - Elektrik Mühendisliği ve Otomasyon Sistemleri");
 
   return (
-    <BrowserRouter>
-<<<<<<< HEAD
+        <BrowserRouter>
       <a href="tel:05511348518" className="phone-button" onClick={() => window.gtag_report_conversion?.('tel:05511348518')}><PhoneIcon/></a>
-=======
-      <a href="tel:05511348518" className="phone-button"><PhoneIcon/></a>
->>>>>>> parent of 9abe207 (scripts added)
       <a 
         href="https://wa.me/905511348518?text=Merhaba,%20elektrik%20ar%C4%B1zas%C4%B1%20i%C3%A7in%20yard%C4%B1m%20istiyorum" 
         className="whatsapp-button" 
