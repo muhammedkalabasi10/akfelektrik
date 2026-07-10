@@ -28,7 +28,7 @@ const NavBar = () => {
                     
                 </div>
                 <div className="flex flex-row items-center gap-6">
-                    <a href="tel:05511348518" className="hidden md:flex items-center gap-2 text-blue-900 hover:text-blue-700 font-semibold transition duration-200" onClick={() => gtag_report_conversion('tel:05511348518')}>
+                    <a href="tel:05511348518" className="hidden md:flex items-center gap-2 text-blue-900 hover:text-blue-700 font-semibold transition duration-200" onClick={() => window.gtag_report_conversion?.('tel:05511348518')}>
                         <PhoneIcon className="text-lg" />
                         <span>0551 134 85 18</span>
                     </a>
