@@ -25,7 +25,7 @@ const MobileBottomBar = () => {
             </div>
 
             <div className="mobile-bottom-bar">
-                <a href="tel:05511348518" className="mobile-bottom-bar-button mobile-bottom-bar-call">
+                <a href="tel:05511348518" className="mobile-bottom-bar-button mobile-bottom-bar-call" onClick={() => gtag_report_conversion('tel:05511348518')}>
                     📞 Ara
                 </a>
                 <a 

@@ -35,7 +35,46 @@
       gtag('js', new Date());
       gtag('config', 'AW-17558209588');
     </script>
-    
+    <script>
+      gtag('config', 'AW-17558209588/_3_wCIa7o8scELSItLRB', {
+        phone_conversion_number: '0551 134 85 18'
+      });
+    </script>
+
+    <script>
+      document.addEventListener('click', function (event) {
+        const phoneLink = event.target.closest('a[href^="tel:"]');
+
+        if (!phoneLink) {
+          return;
+        }
+
+        gtag('event', 'conversion', {
+          send_to: 'AW-17558209588/DmUoCKyAocscELSItLRB'
+        });
+      });
+    </script>
+    <script>
+      gtag('config', 'AW-17558209588/_3_wCIa7o8scELSItLRB', {
+        'phone_conversion_number': '0551 134 85 18'
+      });
+    </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17558209588/DmUoCKyAocscELSItLRB',
+            'value': 1.0,
+            'currency': 'TRY',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
