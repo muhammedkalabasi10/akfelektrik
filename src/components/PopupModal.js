@@ -37,10 +37,14 @@ const PopupModal = () => {
                         <a 
                             href="tel:05511348518"
                             className="popup-btn popup-btn-red"
+<<<<<<< HEAD
                             onClick={(e) => {
                                 closeModal();
                                 return window.gtag_report_conversion?.('tel:05511348518');
                             }}
+=======
+                            onClick={closeModal}
+>>>>>>> parent of 9abe207 (scripts added)
                         >
                             📞 Ücretsiz Fiyat Teklifi Al
                         </a>
