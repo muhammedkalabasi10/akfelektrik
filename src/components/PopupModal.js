@@ -39,7 +39,7 @@ const PopupModal = () => {
                             className="popup-btn popup-btn-red"
                             onClick={(e) => {
                                 closeModal();
-                                return window.gtag_report_conversion?.('tel:05511348518');
+                                return gtag_report_conversion('tel:05511348518');
                             }}
                         >
                             📞 Ücretsiz Fiyat Teklifi Al
